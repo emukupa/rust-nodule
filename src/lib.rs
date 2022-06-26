@@ -2,7 +2,7 @@
 
 #![allow(dead_code, unused_variables)]
 
-struct Credentials {
+pub struct Credentials {
     username: String,
     password: String
 }
@@ -29,7 +29,7 @@ fn logout(){
     // log user out...
 }
 
-fn authenticate(creds: Credentials){
+pub fn authenticate(creds: Credentials){
     if let Status::Connected = connect_to_databases() {
         login(creds);
     }
