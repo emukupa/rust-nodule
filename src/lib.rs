@@ -36,8 +36,11 @@ mod auth_utils {
     }
 }
 
-pub fn authenticate(creds: auth_utils::models::Credentials){
-    if let database::Status::Connected = database::connect_to_databases() {
+use auth_utils::models::Credentials;
+use database::Status;
+
+pub fn authenticate(creds: Credentials){
+    if let Status::Connected = database::connect_to_databases() {
         auth_utils::login(creds);
     }
 }
