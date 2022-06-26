@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=969j0qnJGi8&t=167s
+
 #![allow(dead_code, unused_variables)]
 
 struct Credentials {
@@ -32,3 +34,7 @@ fn authenticate(creds: Credentials){
         login(creds);
     }
 }
+
+// generate using
+// cargo modules generate tree
+// cargo modules generate tree --with-types
