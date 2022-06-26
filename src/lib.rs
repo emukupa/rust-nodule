@@ -3,7 +3,6 @@
 #![allow(dead_code, unused_variables)]
 
 mod database;
-
 mod auth_utils;
 
 use auth_utils::models::Credentials;
