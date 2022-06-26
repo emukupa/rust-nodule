@@ -5,7 +5,7 @@
 mod database;
 mod auth_utils;
 
-use auth_utils::models::Credentials;
+pub use auth_utils::models::Credentials;
 use database::Status;
 
 pub fn authenticate(creds: Credentials){
